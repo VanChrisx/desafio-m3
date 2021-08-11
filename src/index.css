@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin    : 0;
+    padding   : 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.roboto-font {
+    font-family: 'Roboto', sans-serif;
+}
+.open-sans{
+    font-family: 'Open Sans';
+}
+/*TAMAÑO HEADER*/
+.header {
+    background-color: #fafafa;
+    display         : flex;
+    flex-direction  : column;
+    width           : 100%;
+    height          : 616px;
+    background-image: url(/src/img/puntitos.svg);
+}
+
+/*NAVEGADOR*/
+.nav-bar {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    padding        : 0 20px 0 10px;
+    width          : 100%;
+    height         : 15vh;
+
+}
+
+@media (min-width:1440px) {
+    .nav-bar {
+        padding: 60px 80px 0px 50px;
+    }
+
+}
+
+.logo {
+    height: 90px;
+    width : 90px;
+}
+
+.loguito {
+    height: inherit;
+    width : inherit;
+}
+
+@media (min-width:1440px) {
+    .logo {
+        height: 120px;
+        width : 120px;
+    }
+
+    .loguito {
+        height: inherit;
+        width : inherit;
+    }
+}
+
+.opciones {
+    display        : none;
+    width          : 428px;
+    justify-content: space-around
+}
+
+.opcion {
+    font-size  : 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display       : flex;
+    flex-direction: column;
+    height        : 34px;
+    width         : 36px;
+    gap           : 7px;
+}
+
+.rectangulo {
+    background-color: #141414;
+    height          : 6px;
+    width           : 36px
+}
+
+@media(min-width:1440px) {
+    .menu {
+        display: none;
+    }
+
+    .opciones {
+        display: flex;
+    }
+
+}
+
+/*BIENVENIDA*/
+.welcome {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: space-evenly;
+    width          : 100%;
+    height         : 616px;
+}
+
+.logovan {
+    padding-top: 35px;
+    width      : 300px;
+    height     : 300px;
+}
+
+.logovandelta {
+    height: 300px;
+    width : 300px;
+}
+
+.welcomebox {
+    height: 96px;
+    width : 291px;
+}
+
+.title {
+    font-size : 48px;
+    text-align: center;
+}
+
+/*BIENVENIDA DESKTOP*/
+@media(min-width:1440px) {
+    .welcome {
+        display        : flex;
+        flex-direction : row;
+        justify-content: space-between;
+        padding        : 0px 150px 0px 60px;
+    }
+
+    .logovan {
+        vertical-align: top;
+        padding       : 45px;
+        width         : 400px;
+        height        : 400px;
+    }
+
+    .logovandelta {
+        width : 400px;
+        height: 400px;
+    }
+
+    .welcomebox {
+        padding       : 0px 0px 250px 0px;
+        vertical-align: top;
+        height        : 96px;
+        width         : 313px;
+    }
+
+    .title {
+        font-size : 48px;
+        text-align: left;
+    }
+}
+
+/*BIO*/
+.bio {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-evenly;
+    background-color: #141414;
+    height          : 538px;
+    width           : 100%;
+}
+
+.soychris {
+    color     : #fafafa;
+    font-weight: 700;
+    text-align: center;
+    font-size : 32px;
+    margin-bottom: 20px;
+}
+
+.textbox {
+    align-self: center;
+    height    : 193px;
+    width     : 312px;
+}
+
+.textbio {
+    color     : #fafafa;
+    text-align: start;
+    font-weight: 400;
+}
+
+.check {
+    align-self: center;
+    height    : 80px;
+    width     : 80px;
+}
+
+@media (min-width:1440px) {
+
+    .bio {
+        display              : grid;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows   : 33% 33% 33%;
+    }
+
+    .textbox {
+        grid-column-start: 2;
+        grid-row-start   : 2;
+        margin-top       : 28px;
+        margin-left      : 90px;
+        height           : 193px;
+        width            : 532px;
+        font-size        : 24px;
+    }
+
+    .soychris {
+        align-self       : end;
+        justify-self     : left;
+        font-size        : 32px;
+        padding-left     : 100px;
+        grid-column-start: 2;
+        grid-row-start   : 1;
+    }
+
+    .check {
+        justify-self     : end;
+        height           : 211px;
+        width            : 211px;
+        grid-column-start: 1;
+        grid-row-start   : 2;
+    }
+}
+
+/*SERVICIOS*/
+.servicios {
+    background-color: #fafafa;
+    height          : 1375px;
+    width           : 100%;
+    display         : flex;
+    flex-direction  : column;
+    justify-content :space-evenly;
+}
+.serviciocont{
+    width: 100%;
+    height: 1200px;
+    display: flex;
+    justify-content : space-evenly;
+    flex-direction: column;
+}
+
+.misservicios {
+    text-align: center;
+    font-size : 32px;
+}
+
+.serv {
+    height         : 305px;
+    width          : 262px;
+    align-self: center;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-between;
+}
+
+.groupservbox {
+    height      : 129px;
+    width       : 138px;
+    justify-self: center;
+    align-self  : center;
+}
+
+.servicio {
+    font-weight: 700;
+    text-align : center;
+    font-size  : 24px;
+    font-weight: bold;
+}
+
+.textboxserv {
+    align-self: center;
+    height    : 115px;
+    width     : 262px;
+}
+
+.textserv {
+    font-weight: 400;
+    text-align: center;
+    font-size : 16px;
+}
+
+/*Servicios Desktop*/
+@media(min-width:1440px) {
+    .servicios {
+        background-color     : #fafafa;
+        height               : 604px;
+        width                : 100%;
+    }
+    .serviciocont{
+        flex-direction: row;
+        height: 303px;
+    }
+    .misservicios{
+        font-weight: 700;
+        font-size: 48px;
+    }
+
+}
+
+/*FORM*/
+.form {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-evenly;
+    padding         : 0 20px 0 20px;
+    height          : 660px;
+    width           : 100%;
+    background-color: #141414;
+}
+
+.escribox {
+    align-self: center;
+}
+
+.escribime {
+    font-size: 32px;
+    color    : #fafafa;
+}
+
+.formbox {
+    height         : 323px;
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-evenly;
+    gap            : 21px;
+    align-self     : center;
+}
+
+.letter-prop {
+    font-size: 13px;
+    display: block;
+    color  : #fafafa;
+}
+
+.textboxform {
+    stroke       : #2c2c2c;
+    border-radius: 4px;
+    height       : 45px;
+    width        : 335px;
+}
+.fieldset{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 69px;
+}
+.fieldsetmensaje{
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    justify-content: space-between;
+}
+.textboxarea {
+    stroke       : #2c2c2c;
+    border-radius: 4px;
+    height       : 113px;
+    width        : 335px;
+}
+
+.button-section {
+    align-self: center;
+}
+
+.button {
+    width           : 335px;
+    height          : 45px;
+    background-color: #FFD953;
+    font-size       : 16px;
+    font-weight     : 700;
+    border-radius   : 4px;
+}
+
+
+/*Form Desktop*/
+@media(min-width:1440px) {
+    .form {
+        display              : grid;
+        grid-template-columns: 40% 60%;
+        grid-gap             : 77px;
+        height               : 660px;
+        width                : 100%;
+        background-color     : #141414;
+    }
+
+    .escribox {
+        grid-column-start: 1;
+        justify-self     : right;
+        margin-bottom    : 180px;
+    }
+
+    .escribime {
+        font-size: 48px;
+    }
+
+    .formbox {
+        margin-top       : 100px;
+        grid-column-start: 2;
+    }
+
+    .textboxform {
+        width: 376px;
+    }
+
+    .textboxarea {
+        width: 376px;
+    }
+
+    .button-section {
+        grid-column-start: 2;
+        margin-bottom    : 100px;
+    }
+
+    .button {
+        width: 376px;
+    }
+}
+
+/*FOOTER*/
+.footer {
+    display         : flex;
+    flex-direction  : column;
+    justify-content : space-around;
+    padding-left    : 20px;
+    height          : 493px;
+    width           : 100%;
+    background-color: #DBDBDB;
+    background-image: url(./img/puntitos2.svg);
+}
+
+.logosection {
+    display       : flex;
+    flex-direction: column;
+    margin-top    : 20px;
+    height        : 104px;
+}
+
+.logofooter {
+    width : 85px;
+    height: 85px;
+}
+
+.copyright {
+    font-weight: 400;
+    font-size: 13px;
+}
+
+.socialmedia {
+    display        : flex;
+    flex-direction : column;
+    justify-content: space-around;
+    margin-bottom  : 50px;
+    height         : 187px;
+}
+
+.socialsize {
+    height        : 28px;
+    width         : 28px;
+    vertical-align: middle
+}
+
+.socialtext {
+    display       : inline;
+    vertical-align: middle;
+    font-weight: 400;
+}
+
+/*FOOTER Desktop*/
+@media (min-width:1440px) {
+    .footer {
+        display         : flex;
+        flex-direction  : row;
+        justify-content : space-around;
+        height          : 346px;
+        width           : 100%;
+        background-color: #DBDBDB;
+    }
+
+    .logofooter {
+        margin-top  : 98px;
+        margin-right: 900px;
+        width       : 130px;
+        height      : 130px;
+    }
+
+    .socialmedia {
+        margin-right: 150px;
+        margin-top  : 98px;
+    }
+
+
+
+}
