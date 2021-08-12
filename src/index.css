@@ -23,7 +23,7 @@ body {
     flex-direction  : column;
     width           : 100%;
     height          : 616px;
-    background-image: url(/src/img/puntitos.svg);
+    background-image: url(./img/puntitos.svg)
 }
 
 /*NAVEGADOR*/
